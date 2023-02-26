@@ -23,7 +23,11 @@
 
 Tincidunt arcu non sodales neque sodales ut. Semper quis lectus nulla at volutpat diam ut venenatis. Tristique et egestas quis ipsum suspendisse ultrices gravida. Fermentum dui faucibus in ornare quam. Amet cursus sit amet dictum. Consectetur adipiscing elit ut aliquam purus sit amet. Facilisis volutpat est velit egestas dui id.</p>
   <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-  <p >to do {show the jobs}</p>
+  <div>
+    {% for job in jobs%}
+    {% include 'jobitem.html' %}
+    {% endfor %}
+  </div>
     <div class="text-center">
   <button class="btn btn-primary btn-lg">Contact Us</button>
       <p class="mt-4">Copyright 2022, GetCareers</p>
