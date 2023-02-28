@@ -36,8 +36,7 @@ JOBS=[
 
 @app.route('/')
 def func():
-  return render_template('home.html',
-                         jobs=JOBS)
+  return render_template('home.html',jobs=JOBS)
 @app.route("/api/jobs")
 def list_jobs():
   return jsonify(JOBS)
