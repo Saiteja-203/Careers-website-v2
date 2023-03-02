@@ -1,6 +1,9 @@
 from sqlalchemy import create_engine,text
-from decouple import config
-string=config('db_con_string')
+import os
+from dotenv import load_dotenv
+load_dotenv()
+string=os.getenv('db_con_string')
+
 db_cs=string
 engine=create_engine(
     db_cs,
