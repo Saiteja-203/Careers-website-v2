@@ -11,19 +11,20 @@
     {% include 'navbar.html' %}
     {% include 'banner.html' %}
     <div class="container">
-        <h2 class="text-center mt-2 mb-4">Application Submitted</h2>
-        <h4>Full Name</h4>
-    <div>{{application['full_name']}}</div>
-    <h4>Email</h4>
-    <div>{{application['email']}}</div>
-    <h4>Linkedin Url</h4>
-    <div>{{application['linkedin_url']}}</div>
-    <h4>Education</h4>
-    <div>{{application['education']}}</div>
-    <h4>Work_experience</h4>
+        <h2 class="text-center mt-2 mb-4">Get Careers</h2>
+        <p>Your job Application for <b>{{job['title']}}</b> at Get Careers has been submitted .</p>
+        <b>Full Name</b>
+    <div class="mb-2">{{application['full_name']}}</div>
+    <b>Email</b>
+    <div class="mb-2">{{application['email']}}</div>
+    <b>Linkedin Url</b>
+    <div class="mb-2">{{application['linkedin_url']}}</div>
+    <b>Education</b>
+    <div class="mb-2">{{application['education']}}</div>
+    <b>Work_experience</b>
     <div>{{application['work_experience']}}</div>
-    <h4>Resume URL</h4>
-    <div>{{application['resume_url']}}</div>
+    <b>Resume URL</b>
+    <div class="mb-2">{{application['resume_url']}}</div>
     </div>
     {% include 'footer.html' %}
 </body>
