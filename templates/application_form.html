@@ -11,27 +11,27 @@
     <form action="/job/{{job['id']}}/apply" method="post">
         <div class="mb-2">
             <label for="name">Full Name</label><br>
-        <input type="text" id="name" name="full_name" placeholder="Enter your name">
+        <input type="text" required id="name" name="full_name" placeholder="Enter your name">
         </div>
         <div class="mb-2">
             <label for="email">Email</label><br>
-        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <input type="email" required id="email" name="email" placeholder="Enter your email">
         </div>
         <div class="mb-2">
             <label for="linkedin">Linkedin URL</label><br>
-        <input type="text" id="linkedin" name="linkedin_url" placeholder="Enter your linkedin URL">
+        <input type="url" required id="linkedin" name="linkedin_url" placeholder="Enter your linkedin URL">
         </div>
         <div class="mb-2">
             <label for="education">Education</label><br>
-            <textarea name="education" id="education" cols="60" rows="10" placeholder="Timeline your educational background"></textarea>
+            <textarea required name="education" id="education" cols="60" rows="10" placeholder="Timeline your educational background"></textarea>
         </div>
         <div class="mb-2">
             <label for="work">Work Experience</label><br>
-            <textarea name="work_experience" id="work" cols="60" rows="10" placeholder="Timeline your Work Experience"></textarea>
+            <textarea required name="work_experience" id="work" cols="60" rows="10" placeholder="Timeline your Work Experience"></textarea>
         </div>
         <div class="mb-2">
             <label for="resume">Resume URL</label><br>
-        <input type="text" id="resume" name="resume_url" placeholder="Enter your resume URL">
+        <input  type="url" id="resume" name="resume_url" placeholder="Enter your resume URL">
         </div>
         <div>
             <input type="submit" value="Submit">
