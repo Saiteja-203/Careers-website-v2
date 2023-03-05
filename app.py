@@ -23,15 +23,15 @@ def apply_to_job(id):
   add_application_to_db(id,data)
   return render_template('application_submitted.html',application=data,job=job)
 
-@app.route("/api/job/<id>")
-def job_list_by_id(id):
-  job=load_job_from_db(id)
-  return jsonify(job)
+# @app.route("/api/job/<id>")
+# def job_list_by_id(id):
+#   job=load_job_from_db(id)
+#   return jsonify(job)
 
-@app.route("/api/jobs")
-def list_jobs():
-  Jobs=load_jobs_from_db()
-  return jsonify(Jobs)
+# @app.route("/api/jobs")
+# def list_jobs():
+#   Jobs=load_jobs_from_db()
+#   return jsonify(Jobs)
 
 
 if __name__ == "__main__":
