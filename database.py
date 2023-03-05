@@ -28,7 +28,7 @@ def load_job_from_db(id):
     if len(row)==0:
       return None
     else:
-      return dict(row[0])
+      return dict(row[0]._mapping)
 
 def add_application_to_db(id,data):
   with engine.connect() as conn:
